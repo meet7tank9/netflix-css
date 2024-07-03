@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&display=swap');
+
+:root {
+    --primary_color: rgb(229,9,20);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/img/bg.jpeg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100%);
+    height: 95.2vh;
+    position: relative;
+}
+
+@media screen and (max-width:683px) {
+    .main{
+        /* background-size: 100%; */
+    }
+}
+
+.box{
+    height: 95.2vh;
+    width: 100%;
+    opacity: 0.64;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 75vw;
+    margin: auto;
+    height: 60px;
+    position: relative;
+    top: 20px;
+}
+nav img{
+    width: 144px;
+    position: relative;
+    z-index: 10;
+}
+nav button{
+    position: relative;
+    z-index: 10;
+    margin: 10px;
+}
+
+
+
+.hero{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 60px); /* hero height - navbar height */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    text-align: center;
+}
+
+.hero> :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    align-items: center;
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    align-items: center;
+}
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+}
+.seperation{
+    height: 7px;
+    background-color: rgb(63, 59, 59);
+}
+
+
+.email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: var(--primary_color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 29px;
+    font-size: 20px;
+    border: 1px solid var(--primary_color);
+}
+
+.email input{
+    opacity: 0.7;
+    background-color: rgb(31, 30, 30);
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+    padding: 17px 119px 17px 18px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+
+.btn-red-sm{
+    background-color: var(--primary_color);
+    color:white;
+    border-radius: 4px;
+    padding: 8px 19px;
+    font-size: 14px;
+    border: 1px solid var(--primary_color);
+    font-weight: 500;
+}
+
+.btn-lang{
+    background-color: rgba(23,23,23, 0.5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 8px 22px;
+    font-size: 14px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 78vw;
+    margin: 80px auto;
+    color: white;
+    align-items: center;
+}
+
+@media screen and (max-width:1300px) {
+    .first{
+        flex-wrap: wrap;
+    }
+}
+
+.second, .fourth{
+    flex-direction: row-reverse;
+}
+
+.secText{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: 0.5px;
+}
+
+.secText> :nth-child(1){
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.secText> :nth-child(2){
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.secImg{
+    position: relative;
+    margin: 0px 30px;
+}
+
+.secImg img{
+    width: 555px;
+    position: relative;
+    z-index: 1;
+}
+
+.secImg video{
+    position: absolute;
+    top: 71px;
+    left: 75px;
+    width: 444px;
+}
+
+.askeQuestion{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px auto;
+    color: white;
+    font-size: 40px;
+    width: 100%;
+}
+
+.askeQuestion>:nth-child(1){
+    margin: 40px auto;
+    font-weight: 900;
+    text-align: center;
+}
+
+.faqbox{   
+    background-color: rgb(45,45,45);
+    min-width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+}
+
+.faqbox:hover{
+    background-color: rgb(65,65,65);
+    cursor: pointer;
+}
+
+.faqbox> :nth-child(2){
+    color: white;
+}
+
+.footer > :nth-child(1){
+    margin-top: 40px;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+@media screen and (max-width:602px) {
+    .email input{
+        padding: 10px 90px 10px 10px;
+    }
+    .btn-red{
+        padding: 10px 19px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    nav{
+        max-width: 90vw;
+    }
+    .email{
+        flex-direction: column;
+        gap: 15px;
+    }   
+}
+
+
+/* 
+
+
+INSERT INTO Customer_Master (C_No, C_Name, Gender, DOB, City, Contact_No)
+VALUES
+    (1, 'Alice', 'F', '1990-01-01', 'Ahmedabad', '1234567890'),
+    (2, 'Bob', 'M', '1985-05-15', 'Ahmedabad', '9876543210'),
+    (3, 'Charlie', 'M', '1992-08-20', 'Ahmedabad', '1115293333'),
+    (4, 'Diana', 'F', '1988-03-10', 'Ahmedabad', '5556667777'),
+    (5, 'Edward', 'M', '1995-12-05', 'Ahmedabad', '9998887777'),
+    (6, 'Fiona', 'F', '1998-06-30', 'Ahmedabad', '4633392222'),
+    (7, 'George', 'M', '1993-09-25', 'Ahmedabad', '7778889999');
+
+INSERT INTO Branch_Master (B_No, B_Name, Location)
+VALUES
+    (1, 'Main Branch', 'navrangpura'),
+    (2, 'North Branch', 'ambawadi'),
+    (3, 'South Branch', 'nehrunagar'),
+    (4, 'East Branch', 'vastral'),
+    (5, 'West Branch', 'bopal'),
+    (6, 'Central Branch', 'paldi'),
+    (7, 'Tech Branch', 'gota');
+
+INSERT INTO Account_Master (A_No, A_Type, B_No, C_No, Open_date, Current_bal)
+VALUES
+    (101, 'Savings', 1, 1, '2022-01-01', 5000),
+    (102, 'Checking', 2, 2, '2022-02-15', 8000),
+    (103, 'Savings', 3, 3, '2022-03-20', 3000),
+    (104, 'Checking', 4, 4, '2022-04-10', 6000),
+    (105, 'Savings', 5, 5, '2022-05-05', 7000),
+    (106, 'Checking', 6, 6, '2022-06-30', 9000),
+    (107, 'Savings', 7, 7, '2022-07-25', 4000);
+
+
+
+    select B_Name from Branch_Master where B_No=1;
+    +-------------+
+    | B_Name      |
+    +-------------+
+    | Main Branch |
+    +-------------+ */
